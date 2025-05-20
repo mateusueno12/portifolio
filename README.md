@@ -1,16 +1,17 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Meu Portfólio</title>
+    <title>Portfólio - Seu Nome</title>
 </head>
 <body>
-    <div class="header_content">
-        <img src="imagens/foto_perfil.jpg" alt="foto de perfil" class="profile-img">
-        <h1>Mateus Ueno</h1>
-    </div>
+    <header class="header-content">
+        <img src="imagens/foto_perfil.jpg" alt="Foto de perfil" class="profile-img">
+        <h1>Seu Nome</h1>
+        <p>Desenvolvedor Web & Designer UX/UI</p>
+    </header>
     
     <nav>
         <ul>
@@ -19,15 +20,29 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p>Olá, eu sou Seu Nome, um desenvolvedor web apaixonado por criar experiências digitais incríveis. Com mais de 5 anos de experiência no mercado, já trabalhei com diversas tecnologias e frameworks.</p>
+                <br>
+                <p>Minha especialidade é desenvolver interfaces bonitas e funcionais, com foco na experiência do usuário. Acredito que a tecnologia deve ser acessível e agradável para todos.</p>
+                <br>
+                <p>Quando não estou codando, você pode me encontrar lendo um bom livro, explorando a natureza ou experimentando novas receitas na cozinha.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
-/* Reset e configurações gerais */
+/* Reset e estilos gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -38,72 +53,15 @@ body {
 
 a {
     text-decoration: none;
-    color: #0077b6;
+    color: #2c3e50;
 }
 
-/* Header */
-.header_content {
-    background: linear-gradient(135deg, #0077b6, #00b4d8);
+/* Cabeçalho */
+.header-content {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
     color: white;
     text-align: center;
-    padding: 2rem;
-    position: relative;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 1rem;
-    object-fit: cover;
-}
-
-/* Navegação */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem 0;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav li {
-    margin: 0 1rem;
-}
-
-nav a {
-    color: #333;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #0077b6;
-    color: white;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-}
-
-.header {
-    background: linear-gradient(135deg, #6e48aa, #9d50bb);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     position: relative;
 }
 
@@ -117,38 +75,85 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.header h1 {
-    font-size: 2rem;
+.header-content h1 {
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-.header p {
-    font-size: 1.1rem;
+.header-content p {
+    font-size: 1.2rem;
     opacity: 0.9;
+}
+
+/* Navegação */
+nav {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 1.5rem 0;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav li {
+nav ul li {
     margin: 0 1.5rem;
 }
 
-nav a {
-    color: #555;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    background-color: #6e48aa;
-    color: white;
+nav ul li a:hover {
+    color: #3498db;
 }
+
+/* Seções */
+section {
+    padding: 3rem 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+/* Sobre mim */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
