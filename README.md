@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio - Seu Nome</title>
+    <title>Portfólio - Mateus Ueno</title>
 </head>
 <body>
     <header class="header-content">
         <img src="imagens/foto_perfil.jpg" alt="Foto de perfil" class="profile-img">
-        <h1>Seu Nome</h1>
+        <h1>Mateus Ueno</h1>
         <p>Desenvolvedor Web & Designer UX/UI</p>
     </header>
     
@@ -26,9 +26,9 @@
         <div class="about-content">
             <div class="about-text">
                 <h2>Sobre Mim</h2>
-                <p>Olá, eu sou Seu Nome, um desenvolvedor web apaixonado por criar experiências digitais incríveis. Com mais de 5 anos de experiência no mercado, já trabalhei com diversas tecnologias e frameworks.</p>
+                <p>Olá, eu sou Mateus Ueno, gosto de ler diversos livros.</p>
                 <br>
-                <p>Minha especialidade é desenvolver interfaces bonitas e funcionais, com foco na experiência do usuário. Acredito que a tecnologia deve ser acessível e agradável para todos.</p>
+                <p>Minha especialidade é dormir ler e jogar.</p>
                 <br>
                 <p>Quando não estou codando, você pode me encontrar lendo um bom livro, explorando a natureza ou experimentando novas receitas na cozinha.</p>
             </div>
