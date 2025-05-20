@@ -1,159 +1,81 @@
+Html:
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Mateus Ueno</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio - Mateus Ueno</title>
 </head>
 <body>
-    <header class="header-content">
-        <img src="imagens/foto_perfil.jpg" alt="Foto de perfil" class="profile-img">
+    <header>
         <h1>Mateus Ueno</h1>
-        <p>Desenvolvedor Web & Designer UX/UI</p>
+        <p>Estudante | Amante de histórias intensas | Explorador da lógica e da imaginação</p>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>Sobre Mim</h2>
-                <p>Olá, eu sou Mateus Ueno, gosto de ler diversos livros.</p>
-                <br>
-                <p>Minha especialidade é dormir ler e jogar.</p>
-                <br>
-                <p>Quando não estou codando, você pode me encontrar lendo um bom livro, explorando a natureza ou experimentando novas receitas na cozinha.</p>
-            </div>
-        </div>
+    <section class="foto">
+        <img src="pexels-anthony-rahayel-125801377-32134450.jpg" alt="Sobremesa com morangos e pistache">
+    </section>
+
+    <section class="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou Mateus, apaixonado por matemática e programação, mas também por narrativas fortes que desafiam limites. Neste espaço, compartilho um pouco das minhas criações, estudos e da forma como vejo o mundo — entre códigos e palavras que provocam.</p>
+    </section>
+
+    <section class="projetos">
+        <h2>Projetos em Destaque</h2>
+        <ul>
+            <li><strong>Leonardo Ferreira – Entre o Amor e a Revolta</strong>: Uma história intensa de redenção e descobertas.</li>
+            <li><strong>Portfólio de Matemática II</strong>: Códigos, lógica e uma pitada de estilo pessoal.</li>
+        </ul>
     </section>
 </body>
 </html>
 
-/* Reset e estilos gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+css:
 
 body {
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9f6;
     color: #333;
     line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: #2c3e50;
-}
-
-/* Cabeçalho */
-.header-content {
-    background: linear-gradient(135deg, #3498db, #2c3e50);
-    color: white;
     text-align: center;
-    padding: 2rem 0;
-    position: relative;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+header {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.foto img {
+    width: 100%;
+    max-height: 500px;
     object-fit: cover;
-    border: 5px solid white;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #ff4567;
 }
 
-.header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.header-content p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-/* Navegação */
-nav {
-    background-color: #2c3e50;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1.5rem;
-}
-
-nav ul li a {
-    color: white;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #3498db;
-}
-
-/* Seções */
 section {
-    padding: 3rem 10%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #2c3e50;
-    position: relative;
+.sobre, .projetos {
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
 }
 
-section h2::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #3498db;
-    margin: 0.5rem auto;
-    border-radius: 2px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Sobre mim */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+ul li {
+    padding: 10px 0;
 }
-
-.about-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.about-text p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
-}
-
